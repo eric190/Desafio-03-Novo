@@ -1,0 +1,48 @@
+using System;
+
+namespace Desafio__03
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string aluno1 = "Marcos";
+            int nota = 7;
+            string aluno2 = "Pedro";
+            int nota2 = 8;
+            string aluno3 = "João";
+            int nota3 = 10;
+            int n = 0, maior = 0;
+            Console.Write("Informe o número de alunos de 1 a 3 se for 2 não escrever nos 2 últimos:");
+            int.Parse(Console.ReadLine());
+            Console.Write("Informe o nome do aluno");
+            Console.ReadLine();
+            Console.Write("Informe a nota do aluno");
+            n = Convert.ToInt32(Console.ReadLine());
+            maior = n;
+            Console.Write("Informe o nome do aluno");
+            Console.ReadLine();
+            Console.WriteLine("Informe a nota do aluno");
+            n = Convert.ToInt32(Console.ReadLine());
+            if(n > maior){
+                maior = n;
+            }
+            Console.Write("Informe o nome do aluno");
+            Console.ReadLine();
+            
+            Console.Write("Informe a nota do aluno");
+            n = Convert.ToInt32(Console.ReadLine());
+            if (n > maior)
+            {
+                maior = n;
+            }
+            Console.WriteLine("Aluno com a maior nota foi:"+maior);
+            Console.ReadKey();
+            
+           
+            
+
+                
+        }
+    }
+}
